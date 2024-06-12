@@ -1,10 +1,10 @@
 import {
+  BadRequestError,
   Controller,
+  NextFunction,
   Request,
   Response,
-  NextFunction,
-  Router,
-  BadRequestError
+  Router
 } from '@try-catch-f1nally/express-microservice';
 import {AuthService} from './auth.service.interface';
 import {AuthValidator} from './auth.validator.interface';

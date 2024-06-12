@@ -24,14 +24,17 @@ export class AuthValidatorImpl implements AuthValidator {
         login: {
           type: 'string',
           minLength: 5,
-          errorMessage: 'invalid login format'
+          errorMessage: {
+            type: 'login must be type of string',
+            minLength: 'login must be greater than or equal to 5 characters'
+          }
         },
         password: {
           type: 'string',
           minLength: 5,
           errorMessage: {
             type: 'password must be type of string',
-            minLength: 'password must have more than 4 characters'
+            minLength: 'password must be greater than or equal to 5 characters'
           }
         }
       },

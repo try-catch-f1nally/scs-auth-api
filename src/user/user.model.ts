@@ -1,6 +1,6 @@
 import crypto from 'crypto';
-import {Schema, model} from 'mongoose';
-import {UserModel, UserDocument} from './user.model.interface';
+import {model, Schema} from 'mongoose';
+import {UserDocument, UserModel} from './user.model.interface';
 
 const UserSchema = new Schema<UserDocument, UserModel>(
   {
